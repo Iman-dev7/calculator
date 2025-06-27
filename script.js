@@ -79,3 +79,32 @@ function equalClick(){
 function updateDisplay(value){
     document.getElementById('calculator-input').value = value;
 }
+
+document.querySelector('.zero').addEventListener('click', () => display('0'));
+document.querySelector('.one').addEventListener('click', () => display('1'));
+document.querySelector('.two').addEventListener('click', () => display('2'));
+document.querySelector('.three').addEventListener('click', () => display('3'));
+document.querySelector('.four').addEventListener('click', () => display('4'));
+document.querySelector('.five').addEventListener('click', () => display('5'));
+document.querySelector('.six').addEventListener('click', () => display('6'));
+document.querySelector('.seven').addEventListener('click', () => display('7'));
+document.querySelector('.eight').addEventListener('click', () => display('8'));
+document.querySelector('.nine').addEventListener('click', () => display('9'));
+document.querySelector('.add').addEventListener('click', () => display('+'));
+
+document.querySelector('.add').addEventListener('click', () => onClick('+'));
+document.querySelector('.minus').addEventListener('click', () => onClick('-'));
+document.querySelector('.or').addEventListener('click', () => onClick('*')); // you labeled it "or" but it's multiply
+document.querySelector('.delete').addEventListener('click', () => {
+    currentValue = currentValue.slice(0, -1);
+    updateDisplay(currentValue);
+});
+document.querySelector('.clear').addEventListener('click', () => {
+    currentValue = '';
+    num1 = '';
+    num2 = '';
+    operator = '';
+    updateDisplay('');
+});
+
+document.querySelector('.equal').addEventListener('click', equalClick);
