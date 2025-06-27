@@ -16,3 +16,13 @@
     padding: 30px 10px;
     margin-top: 19%;
     margin-left: 25%;
+}
+
+#calculator-input{
+    font-size: 30px;
+    
+    border:none;
+    background-color: black;
+    color: #fff;
+
+}
