@@ -75,3 +75,7 @@ function equalClick(){
     currentValue = result.toString()
 
 }
+
+function updateDisplay(value){
+    document.getElementById('calculator-input').value = value;
+}
