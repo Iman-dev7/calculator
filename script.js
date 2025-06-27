@@ -90,11 +90,10 @@ document.querySelector('.six').addEventListener('click', () => display('6'));
 document.querySelector('.seven').addEventListener('click', () => display('7'));
 document.querySelector('.eight').addEventListener('click', () => display('8'));
 document.querySelector('.nine').addEventListener('click', () => display('9'));
-document.querySelector('.add').addEventListener('click', () => display('+'));
 
 document.querySelector('.add').addEventListener('click', () => onClick('+'));
-document.querySelector('.minus').addEventListener('click', () => onClick('-'));
-document.querySelector('.or').addEventListener('click', () => onClick('*')); // you labeled it "or" but it's multiply
+document.querySelector('.subtract').addEventListener('click', () => onClick('-'));
+document.querySelector('.multiply').addEventListener('click', () => onClick('*'));
 document.querySelector('.delete').addEventListener('click', () => {
     currentValue = currentValue.slice(0, -1);
     updateDisplay(currentValue);

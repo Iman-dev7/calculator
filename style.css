@@ -3,6 +3,7 @@
     height:100%;
     border-radius: 20px;
     gap:20px;
+    color:#fff;
 
 }
 #calculator{
@@ -27,24 +28,24 @@
 
 }
 
-#grey{
+
+#upper-btns{
     display:flex;
-    flex-direction: 
     margin-top: 10px;
     
 }
 
-.orange{
+.first-section{
     display:flex;
 }
 
-.numbers{
+.second-section{
     display:flex;
 }
-.before{
+.third-section{
     display:flex;
 }
-.last{
+.fourth-section{
     display:flex;
 }
 .clear{
@@ -66,7 +67,7 @@
     font-size: 25px;
     border-radius: 50%;
 }
-.minus{
+.subtract{
     background-color: orange;
     border:none;
     font-size: 25px;
@@ -83,14 +84,15 @@
     border:none;
     font-size: 25px;
     border-radius: 50%;
-    width:100px;
-    height: 50px;
+    width:120px;
+
 }
 .one{
     font-size: 25px;
     border:none;
     background-color: #333;
     border-radius: 50%;
+
 }
 .two{
     font-size: 25px;
@@ -145,7 +147,11 @@
     border-radius: 50%;
 }
 .zero{
-    background-color: #333;
-    border:none;
     font-size: 25px;
+    border:none;
+    background-color: #333;
+    border-radius: 50%;
+    width:150px
+
 }
+
