@@ -46,3 +46,32 @@ function display(digit){
     document.getElementById('calculator-input').value = currentValue;
 
 }
+
+function onClick(op){
+    if(num1 === ''){
+        num1 = currentValue;
+        operator = op;
+        currentValue = '';
+
+    }else{
+        num2 = currentValue;
+        let result = operate(operator,parseFloat(num1), parseFloat(num2));
+        updateDisplay(result);
+        num1 = result.toString()
+        operator = op;
+        currentValue = '';
+
+    }
+}
+
+function equalClick(){
+    num2 = currentValue;
+    currentValue = '';
+    let result = operate(operator,parseFloat(num1), parseFloat(num2));
+    updateDisplay(result);
+    num1 = '';
+    num2 = '';
+    operator = '';
+    currentValue = result.toString()
+
+}
